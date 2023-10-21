@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            margin: 0px;
+            overflow: hidden;
+        }
+        body{
+            margin: 0px;
+        }
+        #canvas{
+            background-color: gray;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body onclick="hehe()">
+    <canvas id="canvas" width="1920" height="934"></canvas>
+</body>
+<script>
+    var canvas = document.getElementById("canvas")
+    var ctx = canvas.getContext("2d")
+
+    var cubeSize = document.documentElement.getBoundingClientRect().height/2
+    console.log(cubeSize)
+
+    ctx.fillStyle = "red"
+    ctx.fillRect(100, 100, cubeSize, cubeSize)
+</script>
+</html>
